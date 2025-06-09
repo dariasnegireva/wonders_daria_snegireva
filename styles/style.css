@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(#F5F5F5, #DDECFF, #F5F5F5);
+}
+.header-container {
+    background-color: #F5F5F5;
+    height: 116px;
+}
+
+.hero{
+    padding: 20px;
+}
+.wonders-logo {
+    display: inline-block;
+    position: fixed;
+    top: 40px;
+    left:32px;
+}
+
+.wonders-logo p {
+    display: none;
+}
+
+.burger-img {
+    display: inline-block;
+    position: fixed;
+    top: 46px;
+    right: 32px;
+}
+
+.burger-btn{
+    display: none;
+}
+
+.wonders-desktop-nav-menu {
+    display: none;
+}
+
+.wonders-mobile-nav {
+    display: flex;
+    gap: 64px;
+    flex-direction: column;
+    align-items: start;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0578FF;
+}
+
+.wonders-mobile-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: black;
+}
+
+.skip-the-climbing{
+    position: relative;
+}
+
+.we-sell{
+    position: relative;
+}
+
+.person-count {
+}
+
+
+@media (min-width: 768px) {
+    .wonders-logo p {
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        color: black;
+        font-size: 64px;
+    }
+    .burger-img {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wonders-desktop-nav-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 50vw;
+        margin-top: 43px;
+        margin-right: 64px;
+    }
+    .wonders-desktop-nav-menu a{
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .wonders-mobile-nav{
+        display: none;
+    }
+}
