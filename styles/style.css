@@ -5,6 +5,7 @@ body {
     background: linear-gradient(to bottom, #F5F5F5, #DDECFF, #F5F5F5);
     background-attachment: fixed;
     margin: 0;
+    margin-top: 116px;
 }
 .header-container {
     height: 116px;
@@ -256,6 +257,8 @@ body {
     gap: 12px;
     margin-top: 0;
 }
+
+
 
 @media (min-width: 768px) {
     .wonders-logo p {
