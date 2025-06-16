@@ -2,16 +2,22 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(#F5F5F5, #DDECFF, #F5F5F5);
+    background: linear-gradient(to bottom, #F5F5F5, #DDECFF, #F5F5F5);
+    background-attachment: fixed;
+    margin: 0;
 }
 .header-container {
-    background-color: #F5F5F5;
     height: 116px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: inherit;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.hero{
-    padding: 20px;
-}
 .wonders-logo {
     display: inline-block;
     position: fixed;
@@ -23,7 +29,7 @@ body {
     display: none;
 }
 
-.burger-img {
+#burger-img {
     display: inline-block;
     position: fixed;
     top: 46px;
@@ -55,24 +61,201 @@ body {
     text-decoration: none;
     color: white;
     font-size: 32px;
+}
 
-h1{
+.hero {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#skip-the-climbing {
     font-family: 'Poppins', sans-serif;
     font-size: 32px;
+    font-weight: 700;
     color: black;
 }
 
-.skip-the-climbing{
+.hero p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+.trip-type {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 3px 8px;
+    width: 320px;
+    box-sizing: border-box;
+
+}
+
+.trip-type .radio-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 10px;
+}
+.trip-type button {
+    border: 0;
+}
+
+.trip-type label {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.trip-type input {
+    margin: 0;
+}
+
+.trip-type .person-count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 500;
+    width: 88px;
+}
+
+.trip-type .person-count button {
+    font-size: 16px;
+    background: none;
+}
+.trip-type .person-count button:last-child {
+    color: #0578FF;
+}
+
+.hero-form-label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    margin-top: 16px;
+}
+
+.hero-form-input {
+    display: block;
+    position: relative;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    height: 53px;
+    width: 320px;
+    padding-left: 24px;
+    box-sizing: border-box;
+
+
+
+    &::placeholder {
+        font-family: 'Poppins', sans-serif;
+        color: #90A3BF;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+.calendar-button {
     position: relative;
 }
 
-.we-sell{
-    position: relative;
+.calendar-button .hero-form-input {
+    padding-left: 52px;
 }
 
-.person-count {
+.calendar-button-return {
+     position: absolute;
+     left: 20px;
+     top: 11.5px;
+     border: none;
+     background: none;
 }
 
+.calendar-button-depart {
+    position: absolute;
+    left: 20px;
+    top: 51.5px;
+    border: none;
+    background: none;
+}
+
+.hero-form-submit button {
+    display: block;
+    border: none;
+    border-radius: 10px;
+    margin-top: 24px;
+    margin-bottom: 128px;
+    background-color: #0578FF;
+    color: white;
+    height: 53px;
+    width: 320px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+
+.interesting-facts-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #0578FF;
+    color: white;
+    width: 100vw;
+    height: 259px;
+    box-sizing: border-box;
+}
+
+.fact {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.fact h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+}
+.fact p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+.gallery {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 64px;
+}
+
+.gallery h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 64px;
+    margin-bottom: 24px;
+}
+.gallery-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 0;
+}
 
 @media (min-width: 768px) {
     .wonders-logo p {
@@ -81,7 +264,7 @@ h1{
         color: black;
         font-size: 64px;
     }
-    .burger-img {
+    #burger-img {
         display: none;
     }
 }
@@ -96,14 +279,15 @@ h1{
         margin-top: 43px;
         margin-right: 64px;
     }
-    .wonders-desktop-nav-menu a{
+
+    .wonders-desktop-nav-menu a {
         font-family: 'Poppins', sans-serif;
         font-size: 20px;
         text-decoration: none;
         color: black;
     }
 
-    .wonders-mobile-nav{
+    .wonders-mobile-nav {
         display: none;
     }
 }

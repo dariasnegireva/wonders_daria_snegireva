@@ -2,79 +2,139 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wonders</title>
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-        <div class="wonders-logo">
-            <img src="styles/img/wonders-logo.png" alt="Wonders Logo">
-            <p>Wonders</p>
-        </div>
-        <div class="burger-img">
-            <label>
-                <img src="styles/img/menu.png" alt="Wonders Logo">
-            </label>
-            <button class="burger-btn">
-            </button>
-        </div>
+    <header class="header-container">
+        <div>
+            <div class="wonders-logo">
+                <img src="styles/img/logo.svg" alt="Wonders Logo">
+                <p>Wonders</p>
+            </div>
+
+            <div class="burger-opener>
+                <button id="burger-btn">
+                    <img src="styles/img/Menu.svg" id="burger-img">
+                </button>
+            </div>
         </div>
         <nav class="wonders-desktop-nav-menu">
-            <a href="#">Mobile App</a>
-            <a href="#">FAQs</a>
-            <a href="#">Contact</a>
-            <a href="#">Sign Up</a>
+            <a href="#mobile-app">Mobile App</a>
+            <a href="#faqs">FAQs</a>
+            <a href="#contacts">Contact</a>
+            <a href="#sign-up">Sign Up</a>
         </nav>
         <nav class="wonders-mobile-nav">
-            <a href="#">Mobile App</a>
-            <a href="#">FAQs</a>
-            <a href="#">Contact</a>
-            <a href="#">Sign Up</a>
+            <a href="#mobile-app">Mobile App</a>
+            <a href="#faqs">FAQs</a>
+            <a href="#contact">Contact</a>
+            <a href="#sign-up">Sign Up</a>
         </nav>
     </header>
     <main class="hero">
-        <h1 class="skip-the-climbing">Skip The Climbing,<br>
+        <h1 id="skip-the-climbing">Skip The Climbing,<br>
         Catch The Bus</h1>
-        <p class="we-sell">We sell tickets to the best seats in the house – houses on wheels, that is!<br>
-            Get ready for jaw-dropping views without breaking a sweat.</p>
-        <div class="trip-type"><label>
-            <input type="radio" name="trip" checked> Round trip</label>
-            <label><input type="radio" name="trip"> One Way</label>
-        </div>
-        <div class="person-count">
-            <label>
-                <img src="styles/img/person-count.png" alt="Person count">
-            </label>
-            <button type="button">-</button>
-            <input type="number" value="1" min="1">
-            <button type="button">+</button>
+        <p id="we-sell">
+            We sell tickets to the best seats in the house – houses on wheels, that is! Get ready for jaw-dropping views without breaking a sweat.
+        </p>
+        <div class="trip-type">
+            <div class="radio-wrapper">
+                <input
+                        type="radio"
+                        name="trip"
+                        id="round-trip"
+                        checked
+                />
+                <label for="round-trip">Round trip</label>
+            </div>
+            <div class="radio-wrapper">
+
+                <input
+                        type="radio"
+                        name="trip"
+                        id="one-way-trip"
+                />
+                <label for="one-way-trip">One Way</label>
+            </div>
+            <div class="person-count">
+                <label>
+                <img src="styles/img/person-count.svg" alt="Person count">
+                </label>
+                <button type="button">-</button>
+                <span>1</span>
+                <button type="button">+</button>
+            </div>
         </div>
         <div class="calendar">
             <div>
-                <label>Departure</label>
-                <input type="text" placeholder="Your city/Station"></input>
+                <label for="departure" class="hero-form-label">Departure</label>
+                <input id="departure" class="hero-form-input" type="text" placeholder="Your City/Station">
             </div>
             <div>
-                <label>Arrival</label>
-                <input type="text" placeholder="Where to?"></input>
+                <label for="where-to" class="hero-form-label">Arrival</labelfor>
+                <input id="where-to" class="hero-form-input" type="text" placeholder="Where to?"></input>
             </div>
-            <div>
-                <label>Pick your lucky day</label>
-                <input type="text" placeholder="Depart"></input>
+
+            <div class="calendar-button">
+                <label for="depart" class="hero-form-label">Pick your lucky day</label>
+                <input id="depart" class="hero-form-input" type="text" placeholder="Depart"></input>
+                <button type="button" class="calendar-button-depart">
+                    <img src="styles/img/Calendar.svg" alt="Calendar">
+                </button>
             </div>
-            <div>
-                <input type="text" placeholder="Return"></input>
+
+            <div class="calendar-button">
+                <input id="return" class="hero-form-input" type="text" placeholder="Return"></input>
+                <button type="button" class="calendar-button-return">
+                    <img src="styles/img/Calendar.svg" alt="Calendar">
+                </button>
+            </div>
+            <div class="hero-form-submit">
+                <button type="button">Find My Alpine Ride</button>
             </div>
         </div>
     </main>
     <section class="interesting-facts">
+        <div class="interesting-facts-wrapper">
+            <div class="fact">
+                <h1>1.4M+</h1>
+                <p>Daily Trains</p>
+            </div>
+            <div class="fact">
+                <h1>68k+</h1>
+                <p>Photos Taken</p>
+            </div>
+            <div class="fact">
+                <h1>165+</h1>
+                <p>Years of History</p>
+            </div>
+            <div class="fact">
+                <h1>23M+</h1>
+                <p>Attitude Gained</p>
+            </div>
+        </div>
 
     </section>
     <section class="gallery">
-
+        <h1>Glimpses of Glory</h1>
+        <div class="gallery-wrapper">
+            <img src="styles/img/img01.png" alt="Image 01">
+            <img src="styles/img/img02.png" alt="Image 02">
+            <img src="styles/img/img03.png" alt="Image 03">
+            <img src="styles/img/img04.png" alt="Image 04">
+            <img src="styles/img/img05.png" alt="Image 05">
+        </div>
     </section>
+
     <section class="app">
+        <h1>Free downloads app now!</h1>
+        <div class="app-wrapper">
+            <img src="styles/img/googleplay.svg" alt="Google Play">
+            <img src="styles/img/appstore.svg" alt="App Store">
+            <img src="styles/img/appgallery.svg" alt="App Gallery">
+        </div>
 
     </section>
     <section class="contacts">
