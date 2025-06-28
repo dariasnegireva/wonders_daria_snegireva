@@ -22,6 +22,12 @@
     display: none;
 }
 
+.burger-opener button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
 #burger-img {
     display: inline-block;
     position: fixed;
@@ -29,9 +35,6 @@
     right: 32px;
 }
 
-.burger-btn{
-    display: none;
-}
 
 .wonders-desktop-nav-menu {
     display: none;
@@ -75,6 +78,7 @@
         width: 73px;
         height: 30px;
     }
+
 }
 
 @media (min-width: 1024px) {
