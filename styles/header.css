@@ -46,12 +46,21 @@
     flex-direction: column;
     align-items: start;
     position: fixed;
-    top: 0;
+    top: 116px;
+    z-index: 1000;
+    padding-top: 64px;
+    padding-left: 20px;
     right: -100%;
     width: 100vw;
     height: 100vh;
     background-color: #0578FF;
+    transition: right 0.3s ease;
 }
+
+.wonders-mobile-nav-opened {
+    right: 0;
+}
+
 
 .wonders-mobile-nav a {
     text-decoration: none;

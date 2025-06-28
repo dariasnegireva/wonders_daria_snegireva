@@ -20,3 +20,22 @@
     gap: 30px;
     align-items: center;
 }
+
+.app h2 {
+    display: none;
+}
+@media (min-width: 768px) {
+    .app {
+        height: 509px;
+    }
+
+    .app h1 {
+        display: none;
+    }
+
+    .app h2 {
+        display: block;
+        font-size: 40px;
+        font-weight: 700;
+    }
+}
