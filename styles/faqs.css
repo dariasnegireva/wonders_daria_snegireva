@@ -1,0 +1,54 @@
+.faqs {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 64px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.faqs h {
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.faqs-wrapper {
+    margin-top: 32px;
+    margin-bottom: 179px;
+}
+
+details {
+    border-bottom: 1px solid black;
+    padding: 1rem;
+}
+
+summary {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    font-size: 1.2rem;
+    transition: transform 0.2s ease;
+}
+
+details[open] summary::after {
+    content: '×';
+}
+details p {
+    margin-top: 0.75rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+}

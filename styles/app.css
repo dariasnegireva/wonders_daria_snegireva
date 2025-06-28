@@ -1,0 +1,22 @@
+.app {
+    background-color: #FFC501;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.app h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}

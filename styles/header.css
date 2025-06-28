@@ -1,0 +1,105 @@
+.header-container {
+    height: 116px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: inherit;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.wonders-logo {
+    display: inline-block;
+    position: fixed;
+    top: 40px;
+    left:32px;
+}
+
+.wonders-logo p {
+    display: none;
+}
+
+#burger-img {
+    display: inline-block;
+    position: fixed;
+    top: 46px;
+    right: 32px;
+}
+
+.burger-btn{
+    display: none;
+}
+
+.wonders-desktop-nav-menu {
+    display: none;
+}
+
+.wonders-mobile-nav {
+    display: flex;
+    gap: 64px;
+    flex-direction: column;
+    align-items: start;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0578FF;
+}
+
+.wonders-mobile-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+}
+
+@media (min-width: 768px) {
+    .wonders-logo {
+        position: fixed;
+        top: 32.5px;
+        right: 32px;
+    }
+    .wonders-logo p {
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        color: black;
+        font-size: 34px;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .wonders-logo img {
+        width: 73px;
+        height: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wonders-desktop-nav-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 50vw;
+        margin-top: 43px;
+        margin-right: 64px;
+    }
+
+    .wonders-desktop-nav-menu a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .wonders-mobile-nav {
+        display: none;
+    }
+
+    .burger-opener {
+        display: none;
+    }
+}

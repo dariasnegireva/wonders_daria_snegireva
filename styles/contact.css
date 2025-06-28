@@ -1,0 +1,44 @@
+.contact {
+    position: relative;
+}
+
+.contact-background-blue {
+    background-color: #0578FF;
+    height: 372px;
+}
+
+.contact-wrapper {
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 999;
+    top: -97px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: 341px;
+    width: calc(100vw - 40px);
+    transform: translate(20px);
+    background-color: white;
+    text-align: center;
+}
+
+.contact-wrapper h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.contact-wrapper p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    margin: 0;
+}
+
+p.address {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 30px;
+    line-height: 150%;
+}

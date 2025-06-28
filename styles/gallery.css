@@ -1,0 +1,26 @@
+.gallery {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 64px;
+}
+
+.gallery h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 64px;
+    margin-bottom: 24px;
+}
+
+
+.gallery-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 0;
+}
+
+.gallery-wrapper img {
+    width: 100%;
+}
