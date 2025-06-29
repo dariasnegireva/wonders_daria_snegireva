@@ -65,3 +65,25 @@
     }
 
 }
+
+@media (min-width: 1440px) {
+
+    .app {
+        height: 462px;
+    }
+    .app h2 {
+        font-size: 62px;
+        margin: 0;
+        margin-top: 116px;
+    }
+    .app-wrapper {
+        display: flex;
+        flex-direction: row;
+        row-gap: 125px;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 288px;
+        padding-right: 288px;
+        padding-top: 60px;
+    }
+}

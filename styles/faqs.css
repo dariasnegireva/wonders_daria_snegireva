@@ -61,3 +61,10 @@ details p {
         padding-left: 32px;
     }
 }
+
+
+@media (min-width: 1440px) {
+    .faqs {
+        padding: 128px 177px 128px 177px;
+    }
+}

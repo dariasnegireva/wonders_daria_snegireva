@@ -76,3 +76,10 @@ p.address {
         margin-top: 30px;
         line-height: 150%;
 }
+
+@media (min-width: 1440px) {
+    .contact-wrapper {
+    width: calc(100vw - 800px);
+    transform: translate(400px);
+    }
+}

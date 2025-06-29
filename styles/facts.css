@@ -74,3 +74,20 @@
 
     }
 }
+
+@media (min-width: 1440px) {
+    .interesting-facts {
+        background-color: #0578FF
+        width: 100vw;
+        margin: 0;
+    }
+    .interesting-facts-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 224px;
+        width: 100vw;
+        padding: 64px 59px 64px 59px;
+
+    }
+}

@@ -78,3 +78,22 @@ footer .mobile-copyright {
         font-weight: 600;
     }
 }
+
+@media (min-width: 1440px) {
+    footer {
+        padding-top: 64px;
+        padding-left: 64px;
+        padding-right: 64px;
+        position: relative;
+    }
+
+    .footer-logo {
+        position: absolute;
+
+    }
+
+    .footer-wrapper {
+        margin-left: 50vw;
+
+    }
+}
