@@ -27,6 +27,7 @@
 @media (min-width: 768px) {
     .app {
         height: 509px;
+        padding: 0;
     }
 
     .app h1 {
@@ -37,5 +38,30 @@
         display: block;
         font-size: 40px;
         font-weight: 700;
+        text-align: center;
+        padding-top: 128px;
+        margin-bottom: 32px;
     }
+
+    .app-wrapper {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto 49px auto;
+        row-gap: 30px;
+        margin-top: 32px;
+    }
+    .app-wrapper img {
+        width: 220px;
+    }
+    .top {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+    .app-wrapper img:nth-child(2) {
+        grid-column: 1
+    }
+    .app-wrapper img:nth-child(3) {
+        grid-column: 3
+    }
+
 }

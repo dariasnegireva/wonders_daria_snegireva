@@ -9,6 +9,8 @@
 
 .contact-wrapper {
     box-sizing: border-box;
+    padding-top: 60px;
+    padding-bottom: 60px;
     position: absolute;
     z-index: 999;
     top: -97px;
@@ -25,6 +27,9 @@
     font-family: 'Poppins', sans-serif;
     font-size: 36px;
     font-weight: 700;
+    color: #202020;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 .contact-wrapper p {
@@ -33,6 +38,7 @@
     font-weight: 400;
     line-height: 140%;
     margin: 0;
+    color: #202020;
 }
 
 p.address {
@@ -41,4 +47,32 @@ p.address {
     font-weight: 400;
     margin-top: 30px;
     line-height: 150%;
+    color: #202020;
+}
+
+@media (min-width: 768px) {
+    .contact-wrapper {
+        width: calc(100vw - 306px);
+        height: 397px;
+        transform: translate(153px);
+
+    }
+
+    .contact-wrapper h1 {
+        font-size: 64px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    .contact-wrapper p {
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    p.address {
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 30px;
+        line-height: 150%;
 }

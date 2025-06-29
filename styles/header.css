@@ -91,19 +91,31 @@
 }
 
 @media (min-width: 1024px) {
+    .header-container {
+        padding-left: 64px;
+        padding-top: 40px;
+        padding-right: 64px;
+    }
+
+    #sign-up {
+        font-weight: 600;
+    }
+
+    .wonders-logo p {
+        font-size: 34px;
+    }
     .wonders-desktop-nav-menu {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         margin-left: 50vw;
-        margin-top: 43px;
-        margin-right: 64px;
     }
 
     .wonders-desktop-nav-menu a {
         font-family: 'Poppins', sans-serif;
         font-size: 20px;
+        font-weight: 400;
         text-decoration: none;
         color: black;
     }

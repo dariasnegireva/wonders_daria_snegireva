@@ -221,3 +221,9 @@
 
     }
 }
+
+@media (min-width: 1024px) {
+    .hero {
+        padding-top: 64px;
+    }
+}
