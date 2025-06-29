@@ -37,73 +37,78 @@
     </nav>
 
     <main class="hero">
-        <h1 id="skip-the-climbing">Skip The Climbing,<br>Catch The Bus</h1>
-        <p>
+        <div class="desktop-flex-container-main">
+            <div class="desktop-flex-container">
+            <h1 id="skip-the-climbing">Skip The Climbing,<br>Catch The Bus</h1>
+            <p>
             We sell tickets to the best seats in the house – houses on<br>wheels, that is! Get ready for jaw-dropping views without<br>breaking a sweat.
-        </p>
-        <span>
+            </p>
+            <span>
             We sell tickets to the best seats in the house – houses on wheels, that is!<br>Get ready for jaw-dropping views without breaking a sweat.
-        </span>
-        <div class="desktop-flex-container">
-            <div class="trip-type">
-                <div class="radio-wrapper">
-                    <input
-                            type="radio"
-                            name="trip"
-                            id="round-trip"
-                            checked
-                    />
-                    <label for="round-trip">Round trip</label>
-                </div>
-                <div class="radio-wrapper">
+            </span>
+                <form action="bus-list.html">
+                    <div class="trip-type">
+                        <div class="radio-wrapper">
+                            <input
+                                    type="radio"
+                                    name="trip"
+                                    id="round-trip"
+                                    checked
+                            />
+                            <label for="round-trip">Round trip</label>
+                        </div>
+                        <div class="radio-wrapper">
 
-                    <input
-                            type="radio"
-                            name="trip"
-                            id="one-way-trip"
-                    />
-                    <label for="one-way-trip">One Way</label>
-                </div>
-                <div class="person-count">
-                    <label>
-                        <img src="assets/images/person-count.svg" alt="Person count">
-                    </label>
-                    <button type="button" id="person-count-minus">-</button>
-                    <input type="number" id="person-count" value="1" readonly/>
-                    <button type="button" id="person-count-plus">+</button>
-                </div>
+                            <input
+                                    type="radio"
+                                    name="trip"
+                                    id="one-way-trip"
+                            />
+                            <label for="one-way-trip">One Way</label>
+                        </div>
+                        <div class="person-count">
+                            <label>
+                                <img src="assets/images/person-count.svg" alt="Person count" id="person-count-img">
+                            </label>
+                            <button type="button" id="person-count-minus">-</button>
+                            <input type="number" id="person-count" value="1" readonly/>
+                            <button type="button" id="person-count-plus">+</button>
+                        </div>
+                    </div>
+                    <div class="calendar">
+                        <div>
+                            <label for="departure" class="hero-form-label">Departure</label>
+                            <input id="departure" class="hero-form-input" type="text" placeholder="Your City/Station"
+                                   required/>
+                        </div>
+                        <div>
+                            <label for="where-to" class="hero-form-label">Arrival</label>
+                            <input id="where-to" class="hero-form-input" type="text" placeholder="Where to?" required/>
+                        </div>
+
+                        <div class="calendar-button">
+                            <label for="depart" class="hero-form-label">Pick your lucky day</label>
+                            <input id="depart" class="hero-form-input" type="text" placeholder="Depart" required/>
+                            <button type="button" class="calendar-button-depart">
+                                <img src="assets/images/Calendar.svg" alt="Calendar">
+                            </button>
+                        </div>
+
+                        <div class="calendar-button">
+                            <input id="return" class="hero-form-input" type="text" placeholder="Return" required/>
+                            <button type="button" class="calendar-button-return">
+                                <img src="assets/images/Calendar.svg" alt="Calendar">
+                            </button>
+                        </div>
+                        <div class="hero-form-submit">
+                            <button type="submit" id="submit-button">Find My Alpine Ride</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="calendar">
-                <div>
-                    <label for="departure" class="hero-form-label">Departure</label>
-                    <input id="departure" class="hero-form-input" type="text" placeholder="Your City/Station">
-                </div>
-                <div>
-                    <label for="where-to" class="hero-form-label">Arrival</label>
-                    <input id="where-to" class="hero-form-input" type="text" placeholder="Where to?"></input>
-                </div>
-
-                <div class="calendar-button">
-                    <label for="depart" class="hero-form-label">Pick your lucky day</label>
-                    <input id="depart" class="hero-form-input" type="text" placeholder="Depart"></input>
-                    <button type="button" class="calendar-button-depart">
-                        <img src="assets/images/Calendar.svg" alt="Calendar">
-                    </button>
-                </div>
-
-                <div class="calendar-button">
-                    <input id="return" class="hero-form-input" type="text" placeholder="Return"></input>
-                    <button type="button" class="calendar-button-return">
-                        <img src="assets/images/Calendar.svg" alt="Calendar">
-                    </button>
-                </div>
-                <div class="hero-form-submit">
-                    <button type="submit" id="submit-button">Find My Alpine Ride</button>
-                </div>
+            <div class="desktop-flex-container-img">
+                <img src="assets/images/hero.png" ?>
             </div>
-        </div>
-        <div class="desktop-flex-container">
-<!--            <img-->
         </div>
     </main>
     <section class="interesting-facts">

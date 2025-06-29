@@ -90,11 +90,18 @@
 
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
+
     .header-container {
         padding-left: 64px;
         padding-top: 40px;
         padding-right: 64px;
+    }
+
+    .wonders-logo {
+        position: fixed;
+        top: 32.5px;
+        left: 64px;
     }
 
     #sign-up {

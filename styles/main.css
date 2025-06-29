@@ -170,6 +170,10 @@ input[type='number']:focus {
     font-weight: 700;
 }
 
+.desktop-flex-container img {
+    display: none;
+}
+
 
 @media (min-width: 768px) {
     #skip-the-climbing {
@@ -208,6 +212,7 @@ input[type='number']:focus {
 
     .calendar {
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
         column-gap: 32px;
         row-gap: 24px;
@@ -243,10 +248,49 @@ input[type='number']:focus {
         width: calc(100vw - 128px);
 
     }
+
+    .desktop-flex-container-img {
+        display: none;
+    }
 }
 
-@media (min-width: 1024px) {
-    .hero {
-        padding-top: 64px;
+@media (min-width: 1200px) {
+
+    #person-count-img {
+        display: block;
     }
+
+    .hero {
+        box-sizing: border-box;
+        padding-left: 0;
+        padding-right: 64px;
+        margin: 0;
+        margin-top: 64px;
+    }
+
+    .desktop-flex-container-main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100vw;
+        padding: 64px 64px 64px 64px;
+
+    }
+
+   .calendar {
+       display: grid;
+       grid-template-columns: 304px 304px;
+       grid-template-rows: repeat(2, 1fr);
+       width: 640px;
+   }
+
+    .desktop-flex-container-img {
+        display: block;
+    }
+
+    #submit-button {
+        width: 640px;
+    }
+
+
 }
