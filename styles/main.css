@@ -61,15 +61,42 @@
     justify-content: space-between;
     font-size: 12px;
     font-weight: 500;
-    width: 88px;
 }
 
 .trip-type .person-count button {
     font-size: 16px;
     background: none;
 }
-.trip-type .person-count button:last-child {
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+    border: none;
+    background: none;
+}
+
+input[type='number']:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#person-count-plus {
     color: #0578FF;
+}
+
+#person-count {
+    background: none;
+    border: none;
+    width: 24px;
+    text-align: center;
+    font-size: 14px;
 }
 
 .hero-form-label {
@@ -177,10 +204,6 @@
     .trip-type label {
         font-size: 14px;
         font-weight: 400;
-    }
-
-    .person-count span {
-        margin: 0;
     }
 
     .calendar {
