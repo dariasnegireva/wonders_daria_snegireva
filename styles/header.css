@@ -6,16 +6,16 @@
     width: 100%;
     z-index: 1000;
     background: inherit;
+
+    display: flex;
+    justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
-
 }
 
 .wonders-logo {
-    display: inline-block;
-    position: fixed;
-    top: 40px;
-    left:32px;
+    display: flex;
+    align-items: center;
 }
 
 .wonders-logo p {
@@ -69,11 +69,11 @@
 }
 
 @media (min-width: 768px) {
-    .wonders-logo {
-        position: fixed;
-        top: 32.5px;
-        right: 32px;
+    .header-container {
+        padding-left: 32px;
+        padding-right: 32px;
     }
+
     .wonders-logo p {
         display: inline-block;
         font-family: 'Poppins', sans-serif;
@@ -87,23 +87,13 @@
         width: 73px;
         height: 30px;
     }
-
 }
 
 @media (min-width: 1440px) {
-
     .header-container {
         padding-left: 64px;
-        padding-top: 40px;
         padding-right: 64px;
     }
-
-    .wonders-logo {
-        position: fixed;
-        top: 32.5px;
-        left: 64px;
-    }
-
     #sign-up {
         font-weight: 600;
     }
@@ -113,10 +103,9 @@
     }
     .wonders-desktop-nav-menu {
         display: flex;
-        flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        margin-left: 50vw;
+        width: 50vw;
     }
 
     .wonders-desktop-nav-menu a {
