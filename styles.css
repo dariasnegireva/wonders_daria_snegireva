@@ -9,6 +9,9 @@
 @import url('styles/faqs.css');
 @import url('styles/contact.css');
 @import url('styles/footer.css');
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Poppins', sans-serif;

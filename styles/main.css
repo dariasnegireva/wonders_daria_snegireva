@@ -170,9 +170,15 @@ input[type='number']:focus {
     font-weight: 700;
 }
 
+.hero-form-submit button:hover {
+    cursor: pointer;
+
+}
+
 .desktop-flex-container-img {
     display: none;
 }
+
 
 
 @media (min-width: 768px) {
