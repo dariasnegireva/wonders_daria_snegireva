@@ -22,17 +22,17 @@
     display: none;
 }
 
+.burger-opener {
+    display: flex;
+    align-items: center;
+}
 .burger-opener button {
     background: none;
     border: none;
     padding: 0;
 }
-
 #burger-img {
     display: inline-block;
-    position: fixed;
-    top: 46px;
-    right: 32px;
 }
 
 
